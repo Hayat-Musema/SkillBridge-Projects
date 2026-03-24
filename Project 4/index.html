@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Management System</h1>
+
+
+  <div class="form-container">
+    <input type="text" id="studentName" placeholder="Student Name">
+    <input type="number" id="studentGrade" placeholder="Student Grade">
+    <button id="addStudentBtn">Add Student</button>
+  </div>
+
+<div class="bonus-features">
+  <input type="text" id="searchName" placeholder="Search by Name">
+  <input type="number" id="filterGrade" placeholder="Filter Grade ≥">
+  <button id="applyFilterBtn">Apply Filter</button>
+</div>
+
+
+
+  <table id="studentsTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Grade</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+ 
+  <button id="calculateAverageBtn">Calculate Average</button>
+  <button id="findTopStudentBtn">Find Top Student</button>
+
+  <p id="averageResult"></p>
+  <p id="topStudentResult"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
