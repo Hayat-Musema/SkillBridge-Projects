@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meteo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header class="header">
+  <div class="logo">METEO</div>
+
+  <nav class="nav">
+    <span onclick="selectCity(this,'Addis Ababa')" class="active">Addis Ababa</span>
+    <span onclick="selectCity(this,'London')">London</span>
+    <span onclick="selectCity(this,'Tokyo')">Tokyo</span>
+    <span onclick="selectCity(this,'New York')">New York</span>
+  </nav>
+
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Search city...">
+  </div>
+</header>
+
+
+<main class="main">
+
+  <div class="left">
+    <p class="label">CURRENT WEATHER</p>
+    <h1 id="city">ADDIS ABABA</h1>
+    <h2 id="temp">--°</h2>
+    <p id="desc">Loading...</p>
+    <p id="date"></p>
+  </div>
+
+  <div class="right">
+    <div class="card">
+      <p>HUMIDITY</p>
+      <h3 id="humidity">--%</h3>
+    </div>
+
+    <div class="card">
+      <p>WIND</p>
+      <h3 id="wind">-- km/h</h3>
+    </div>
+
+    <div class="card">
+      <p>UV INDEX</p>
+      <h3 id="uv">--</h3>
+    </div>
+
+    <div class="card">
+      <p>VISIBILITY</p>
+      <h3 id="visibility">-- km</h3>
+    </div>
+  </div>
+
+</main>
+<footer class="footer">
+  <p>© 2024 METEO. All data curated.</p>
+
+  <div class="footer-links">
+    <span>Privacy</span>
+    <span>Terms</span>
+    <span>API Access</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
